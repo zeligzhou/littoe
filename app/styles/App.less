@@ -1,0 +1,41 @@
+/* Base Application Styles */
+@primeWhite:#FEFEFF;
+@primeYellow:#F6E5AA;
+@primePurple:#8FA1FA;
+@primeGrey:#D9D8E3;
+@primeDark:#9C8A91;
+
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/b33mefljb7p0hpvi.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/b33mefljb7p0hpvi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/b33mefljb7p0hpvi.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/b33mefljb7p0hpvi.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/b33mefljb7p0hpvi.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}
+
+
+body,html {
+  font-family: 'webfont';
+  color: @primeDark;
+  background: @primePurple;
+  font-size: 62.5%;
+}
+
+.index img {
+  margin: 4rem auto;
+  border-radius: 4px;
+  background: transparent;
+  display: block;
+  width: 16rem;
+}
+
+.index .notice {
+  margin: 2rem auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border: 1px solid transparent;
+  border-width: 1px 0;
+  background: #F6E5AA;
+}

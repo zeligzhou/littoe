@@ -1,11 +1,17 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: path.resolve(__dirname, './app/index.js'),
   output: {
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, './build/src'),
     filename: 'bundle.js',
   },
+  externals: {
+    "react": 'React',
+    "react-dom":'ReactDOM'
+  },
+  /*plugins: [ new webpack.optimize.CommonsChunkPlugin("init.js") ],*/
   module: {
     loaders: [{
       test: /\.(js|jsx)$/,

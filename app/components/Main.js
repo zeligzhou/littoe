@@ -9,7 +9,7 @@ var AppComponent = React.createClass({
     return (
       <div className="index">
         <img src={logoImage} alt="logo" />
-        <div className="notice">Littoe 来了!<br />准备好了吗？</div>
+        <div className="notice">Littoe 来了!<br />R U Ready？</div>
       </div>
     );
   }

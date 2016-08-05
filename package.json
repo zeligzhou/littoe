@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+    "build": "webpack --display-error-details",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --watch --content-base build"
   },
   "author": "Zelig",
   "license": "ISC",

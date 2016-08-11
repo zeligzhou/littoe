@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './build/src'),
     filename: 'bundle.js',
+    publicPath:'src/'
   },
   externals: {
     "react": 'React',

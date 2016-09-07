@@ -1,5 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
+var Dashboard = require('webpack-dashboard');
+var DashboardPlugin = require('webpack-dashboard/plugin');
+var dashboard = new Dashboard();
 
 module.exports = {
   entry: path.resolve(__dirname, './app/index.js'),
@@ -13,6 +16,9 @@ module.exports = {
     "react-dom":'ReactDOM'
   },
   /*plugins: [ new webpack.optimize.CommonsChunkPlugin("init.js") ],*/
+  plugins: [
+    new DashboardPlugin(dashboard.setData)
+  ],
   module: {
     loaders: [{
       test: /\.(js|jsx)$/,

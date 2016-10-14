@@ -106,7 +106,7 @@
 	        var dotList = [];
 
 	        function init() {
-	            var imgW = winWidth * 0.8,
+	            var imgW = Math.min(winWidth * 0.8, 300),
 	                imgH = imgW,
 	                sx = winWidth / 2 - imgW / 2,
 	                sy = winHeight / 2 - imgH / 2;
@@ -149,7 +149,7 @@
 	        var rafid;
 	        var allnum = 0;
 	        function draw() {
-	            var imgW = winWidth * 0.8,
+	            var imgW = Math.min(winWidth * 0.8, 300),
 	                imgH = imgW,
 	                sx = winWidth / 2 - imgW / 2,
 	                sy = winHeight / 2 - imgH / 2;
